@@ -39,7 +39,7 @@ if uploaded_file is not None:
     )
 
     # Run prediction
-    prediction = predict_image(model, image)
+    prediction = predict_image(model, image, device="cpu")
 
     # Display result
     st.subheader(f"Prediction: {prediction}")
